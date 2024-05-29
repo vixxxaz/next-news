@@ -17,46 +17,10 @@
 }
 
 body {
-  color: var(--secondary-color);
-  background: #087f8c;
+  color: var(--primary-color);
+  background: var(--secondary-color);
     
 }
 
-/* @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
 
-/* - Tailwind
-
-{ 'midnight_green': { DEFAULT: '#095256', 100: '#021112', 200: '#042223', 300: '#063235', 400: '#074346', 500: '#095256', 600: '#119ba2', 700: '#1fdde7', 800: '#69e9ef', 900: '#b4f4f7' }, 'teal': { DEFAULT: '#087f8c', 100: '#02191c', 200: '#033338', 300: '#054c54', 400: '#076570', 500: '#087f8c', 600: '#0cbdd0', 700: '#32e0f3', 800: '#76eaf7', 900: '#bbf5fb' }, 'zomp': { DEFAULT: '#5aaa95', 100: '#12221e', 200: '#23453c', 300: '#35675a', 400: '#478978', 500: '#5aaa95', 600: '#7bbbaa', 700: '#9cccbf', 800: '#bdddd4', 900: '#deeeea' }, 'asparagus': { DEFAULT: '#86a873', 100: '#1a2316', 200: '#35452b', 300: '#4f6841', 400: '#698a56', 500: '#86a873', 600: '#9eb88e', 700: '#b6caaa', 800: '#cedcc7', 900: '#e7ede3' }, 'satin_sheen_gold': { DEFAULT: '#bb9f06', 100: '#262001', 200: '#4b4002', 300: '#716003', 400: '#968105', 500: '#bb9f06', 600: '#f7d40a', 700: '#f9df47', 800: '#fbe984', 900: '#fdf4c2' } }
-
-
-
-- With #
-
-#095256, #087f8c, #5aaa95, #86a873, #bb9f06
-
-- Array
-
-["095256","087f8c","5aaa95","86a873","bb9f06"]
-
-- Object
-
-{"Midnight green":"095256","Teal":"087f8c","Zomp":"5aaa95","Asparagus":"86a873","Satin sheen gold":"bb9f06"}
-
-- Extended Array
-
-[{"name":"Midnight green","hex":"095256","rgb":[9,82,86],"cmyk":[90,5,0,66],"hsb":[183,90,34],"hsl":[183,81,19],"lab":[31,-19,-8]},{"name":"Teal","hex":"087f8c","rgb":[8,127,140],"cmyk":[94,9,0,45],"hsb":[186,94,55],"hsl":[186,89,29],"lab":[48,-24,-15]},{"name":"Zomp","hex":"5aaa95","rgb":[90,170,149],"cmyk":[47,0,12,33],"hsb":[164,47,67],"hsl":[164,32,51],"lab":[64,-30,3]},{"name":"Asparagus","hex":"86a873","rgb":[134,168,115],"cmyk":[20,0,32,34],"hsb":[98,32,66],"hsl":[98,23,55],"lab":[65,-22,24]},{"name":"Satin sheen gold","hex":"bb9f06","rgb":[187,159,6],"cmyk":[0,15,97,27],"hsb":[51,97,73],"hsl":[51,94,38],"lab":[66,-2,69]}]
-
-- XML
-
-<palette>
-  <color name="Midnight green" hex="095256" r="9" g="82" b="86" />
-  <color name="Teal" hex="087f8c" r="8" g="127" b="140" />
-  <color name="Zomp" hex="5aaa95" r="90" g="170" b="149" />
-  <color name="Asparagus" hex="86a873" r="134" g="168" b="115" />
-  <color name="Satin sheen gold" hex="bb9f06" r="187" g="159" b="6" />
-</palette> */
 
