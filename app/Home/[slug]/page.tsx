@@ -1,6 +1,7 @@
 // app/Home/[slug]/page.tsx
 import { Metadata } from 'next';
 import NewsArticles from '../../components/NewsArticles';
+import Link from 'next/link';
 
 interface Article {
   source: {
@@ -29,7 +30,7 @@ const fetchArticles = async (): Promise<Article[]> => {
 
   const response = await fetch(url);
   const data = await response.json();
-  console.log(data)
+  
   return data.articles || [];
 };
 
@@ -42,9 +43,10 @@ const NewsPage = async ({ params }: { params: { slug: string } }) => {
   const articles = await fetchArticles();
 
   return (
-    <div className='w-full h-full text-center text-fifth-color'>
+    <section className='w-full h-full text-center text-black-color font-bold rounded'>
       <NewsArticles  articles={articles} />
-    </div>
+      <Link href='./'>BACK Home</Link>
+    </section>
   );
 };
 
