@@ -1,4 +1,5 @@
 // app/Home/[slug]/page.tsx
+import { ArrowBigLeft } from 'lucide-react';
 import { Metadata } from 'next';
 import NewsArticles from '../../components/NewsArticles';
 import Link from 'next/link';
@@ -24,6 +25,7 @@ interface NewsPageProps {
 const fetchArticles = async (): Promise<Article[]> => {
   const url = 'https://newsapi.org/v2/everything?' +
               'domains=techcrunch.com&' +
+              'apple&'+
               'from=2024-05-28&' +
               'sortBy=popularity&' +
               'apiKey=fb46f0bd72e2482c8cee5ec82fd9bb88';
@@ -35,18 +37,27 @@ const fetchArticles = async (): Promise<Article[]> => {
 };
 
 
+
+
 export const metadata: Metadata = {
     title: 'Apple News Articles',
   };
 
 const NewsPage = async ({ params }: { params: { slug: string } }) => {
   const articles = await fetchArticles();
+ 
 
   return (
-    <section className='w-full h-full text-center text-black-color font-bold rounded'>
-      <NewsArticles  articles={articles} />
-      <Link href='./'>BACK Home</Link>
+    <section className='w-full h-full text-center  font-bold rounded'>
+        <NewsArticles  articles={articles} />
+      <div className='bg-white text-black p-auto w-40 h-20 mx-auto rounded '>
+        <Link className='flex mx-auto text-center align-items'  href='./'>  
+          <ArrowBigLeft className="color-black h-20 w-20"/>
+          BACK Home 
+        </Link>
+      </div>         
     </section>
+    
   );
 };
 

@@ -1,6 +1,7 @@
 // components/NewsArticles.tsx
 
 
+
 interface Article {
   source: {
     id: string | null;
@@ -21,21 +22,23 @@ interface NewsArticlesProps {
 
 const NewsArticles: React.FC<NewsArticlesProps> = ({ articles }) => {
   return (
-    <div>
-    <h1>Apple News Articles</h1>
-    <ul>
+    <section>
+    <h1 className="text-3xl text-color-primary p-6 bg-blue-200 rounded-md">Tech News Articles</h1>
+    <p className="text-white">Apple, techcrunch</p>
+    <ul >
       {articles.map((article, index) => (
-        <li key={index}>
+        <li className="p-6 " key={index}>
           {article.urlToImage && (
-            <img src={article.urlToImage} alt={article.title} style={{ width: '100%', height: 'auto' }} />
+            
+            <img className=" rounded-xl mx-auto" src={article.urlToImage} alt={article.title} style={{ width: '350', height: '350' }} />
           )}
-          <h2>{article.title}</h2>
-          <p>{article.description}</p>
-          <a href={article.url} target="_blank" rel="noopener noreferrer">Read more</a>
+          <h2 className="p-6 text-white ">{article.title}</h2>
+          <p className="p-6 text-white">{article.description}</p>
+          <a className="p-6 text-white" href={article.url} target="_blank" rel="noopener noreferrer">Read more</a>
         </li>
       ))}
     </ul>
-  </div>
+  </section>
   );
 };
 

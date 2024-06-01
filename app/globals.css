@@ -13,13 +13,13 @@
     --tertiary-color: #5aaa95;
     --fourth-color: #86a873;
     --fifth-color: #bb9f06;
+    --sixt-color: black;
   }
 }
 
 body {
   color: var(--primary-color);
-  background: var(--secondary-color);
-    
+  background: var(--secondary-color);   
 }
 
 
