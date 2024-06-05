@@ -26,7 +26,7 @@ const fetchArticles = async (): Promise<Article[]> => {
   const url = 'https://newsapi.org/v2/everything?' +
               'domains=techcrunch.com&' +
               'apple&'+
-              'from=2024-05-28&' +
+              'from=2024-06-04&' +
               'sortBy=popularity&' +
               'apiKey=fb46f0bd72e2482c8cee5ec82fd9bb88';
 

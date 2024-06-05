@@ -30,6 +30,7 @@ const NewsArticles: React.FC<NewsArticlesProps> = ({ articles }) => {
         <li className="p-6 " key={index}>
           {article.urlToImage && (
             
+            // eslint-disable-next-line @next/next/no-img-element
             <img className=" rounded-xl mx-auto" src={article.urlToImage} alt={article.title} style={{ width: '350', height: '350' }} />
           )}
           <h2 className="p-6 text-white ">{article.title}</h2>

@@ -1,23 +1,37 @@
 import Image from "next/image";
-import IndexPage from "./components/IndexPage";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+
 import Nav from "./components/Nav";
 import Article from "./components/Article";
+
+import {  options } from "./api/auth/[...nextauth]/options";
+import { getServerSession } from "next-auth";
+import UserCard from "./components/UserCard";
+
 
  
 
 
-export default function Home() {
+export default async function Home() {
+
+  const session = await getServerSession(options)
+
   return (
+
     <>
-      <IndexPage />
+    
+      {/* <IndexPage /> */}
+      
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <Header />
-        <Nav />
+      
+            {session ? (
+            <UserCard user={session?.user} pagetype={"Home"} />
+                ) : (
+                  <h1>you are not loggin</h1>
+                )}  
         <Article />
-        <Footer />     
+            
       </main>
     </>
+
   );
 }
