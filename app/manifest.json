@@ -1,0 +1,16 @@
+{
+    "name": "My Next-news application",
+    "short_name": "Next-News App",
+    "description": "An application about news built with Next.js",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color":" #6a8285",
+    "theme_color": "#497376",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "any",
+            "type": "image/x-icon"
+        }
+    ]   
+  }
