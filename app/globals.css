@@ -9,10 +9,10 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --primary-color: #497376;
-    --secondary-color: #6a8285;
-    --tertiary-color: #6cbda8;
+    --secondary-color: #48777e;
+    --tertiary-color: #43a289;
     --fourth-color: #86a873;
-    --fifth-color: #6bc5b3;
+    --fifth-color: #51d2b8;
     --sixt-color: black;
   }
 }

@@ -35,6 +35,7 @@ const NewsArticles: React.FC<NewsArticlesProps> = ({ articles }) => {
           )}
           <h2 className="p-6 text-white ">{article.title}</h2>
           <p className="p-6 text-white">{article.description}</p>
+          <p className="p-6 text-white">{article.publishedAt}</p>
           <a className="p-6 text-white" href={article.url} target="_blank" rel="noopener noreferrer">Read more</a>
         </li>
       ))}

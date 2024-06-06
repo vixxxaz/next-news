@@ -24,17 +24,17 @@ interface NewsPageProps {
 
 const fetchArticles = async (): Promise<Article[]> => {
   const apiKey = process.env.NEXT_PUBLIC_NEWS_API_KEY as string;
-  console.log('API Key:', apiKey); 
+  
   const url = 'https://newsapi.org/v2/everything?' +
-              'domains=techcrunch.com&' +             
+              'domains=techcrunch.com,thenextweb.com&' +             
               'from=2024-06-04&' +
-              'sortBy=popularity&' +
+              'sortBy=publishedAt&' +
               `apiKey=${apiKey}`;
 
   const response = await fetch(url);
   
   const data = await response.json();
-  console.log(data)
+  // console.log(data)
   return data.articles || [];
 };
 
