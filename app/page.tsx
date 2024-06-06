@@ -21,7 +21,7 @@ export default async function Home() {
     
       {/* <IndexPage /> */}
       
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <section className="flex min-h-screen flex-col items-center justify-between p-24">
       
             {session ? (
             <UserCard user={session?.user} pagetype={"Home"} />
@@ -30,7 +30,7 @@ export default async function Home() {
                 )}  
         <Article />
             
-      </main>
+      </section>
     </>
 
   );

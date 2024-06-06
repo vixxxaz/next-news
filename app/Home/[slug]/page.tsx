@@ -24,8 +24,7 @@ interface NewsPageProps {
 
 const fetchArticles = async (): Promise<Article[]> => {
   const url = 'https://newsapi.org/v2/everything?' +
-              'domains=techcrunch.com&' +
-              'apple&'+
+              'domains=techcrunch.com&' +             
               'from=2024-06-04&' +
               'sortBy=popularity&' +
               'apiKey=fb46f0bd72e2482c8cee5ec82fd9bb88';
@@ -40,7 +39,7 @@ const fetchArticles = async (): Promise<Article[]> => {
 
 
 export const metadata: Metadata = {
-    title: 'Apple News Articles',
+    title: 'Techcrunch News Articles',
   };
 
 const NewsPage = async ({ params }: { params: { slug: string } }) => {

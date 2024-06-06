@@ -15,19 +15,19 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'lh3.googleusercontent.com',
                 port: '',
-                pathname: '/u/**',
-            }
-            
-        ],
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'lh3.googleusercontent.com',
-                port: '',
                 pathname: '/a/**',
             }
             
         ],
+        // remotePatterns: [
+        //     {
+        //         protocol: 'https',
+        //         hostname: 'lh3.googleusercontent.com',
+        //         port: '',
+        //         pathname: '/a/**',
+        //     }
+            
+        // ],
         
 
     },        
