@@ -33,10 +33,10 @@ const NewsArticles: React.FC<NewsArticlesProps> = ({ articles }) => {
             // eslint-disable-next-line @next/next/no-img-element
             <img className=" rounded-xl mx-auto" src={article.urlToImage} alt={article.title} style={{ width: '350', height: '350' }} />
           )}
-          <h2 className="p-6 text-white ">{article.title}</h2>
-          <p className="p-6 text-white">{article.description}</p>
-          <p className="p-6 text-white">{article.publishedAt}</p>
-          <a className="p-6 text-white" href={article.url} target="_blank" rel="noopener noreferrer">Read more</a>
+          <h2 className="p-6 text-fifth-color font-extrabold text-xl underline decoration-from-auto ">{article.title}</h2>
+          <p className="p-6 text-white font-bold">{article.description}</p>
+          <p className="p-6 text-white text-sm">{new Date(article.publishedAt).toLocaleDateString()}</p>
+          <a className="p-6 text-fifth-color text-xl hover:text-lime-400 font-extrabold "  href={article.url} target="_blank" rel="noopener noreferrer">Read more</a>
         </li>
       ))}
     </ul>

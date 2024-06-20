@@ -5,7 +5,7 @@ import AuthProvider from './context/AuthProvider'
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import IndexPage from "./components/IndexPage";
+// import IndexPage from "./components/IndexPage";
 
 
 const inter = Inter({ subsets: ["latin"] });
